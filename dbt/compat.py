@@ -20,8 +20,10 @@ else:
 
 if WHICH_PYTHON == 2:
     from SimpleHTTPServer import SimpleHTTPRequestHandler
+    from SocketServer import TCPServer
 else:
     from http.server import SimpleHTTPRequestHandler
+    from socketserver import TCPServer
 
 
 def to_unicode(s):
